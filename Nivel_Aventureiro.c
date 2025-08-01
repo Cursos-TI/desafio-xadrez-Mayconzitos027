@@ -9,7 +9,7 @@ int main()
     int torre = 0;
     int bispo = 0;
     int rainha = 0;
-    int passo = 0;
+    int cavalo = 0;
 
     // Torre: Mover 5 casas para a direita - (For)
     printf("Movimento da Torre:\n");
@@ -38,10 +38,10 @@ int main()
     printf("\nMovimento do Cavalo:\n");
     for (int i = 0; i < 1; i++) // Loop externo: Movimento em "L" 
     {
-        passo = 0;
-        while (passo < 3) // Loop interno: 3 passos por movimento (2 baixo, 1 esquerda)
+        cavalo = 0;
+        while (cavalo < 3) // Loop interno: 3 passos por movimento (2 baixo, 1 esquerda)
         {
-            if (passo < 2) 
+            if (cavalo < 2) 
             {
                 printf("Baixo\n"); // Primeiros 2 passos: Baixo
             } 
@@ -49,7 +49,7 @@ int main()
             {
                 printf("Esquerda\n"); // Último passo: Esquerda
             }
-            passo++;
+            cavalo++;
         }
     }
 

@@ -6,8 +6,8 @@
 
 int main()
 {
-    int bispo = 0;
-    int rainha = 0;
+    int bispo = 1;
+    int rainha = 1;
 
     // Torre: Mover 5 casas para a direita. (For)
     printf("Movimento da Torre:\n");

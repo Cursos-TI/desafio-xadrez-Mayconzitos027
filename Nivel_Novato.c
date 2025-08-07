@@ -6,14 +6,13 @@
 
 int main()
 {
-    int torre = 0;
     int bispo = 0;
     int rainha = 0;
 
     // Torre: Mover 5 casas para a direita. (For)
     printf("Movimento da Torre:\n");
 
-    for (torre; torre < 5; torre++) // Determina quantas casas andar(repetição do movimento).
+    for (int torre = 1; torre <= 5; torre++) // Determina quantas casas andar(repetição do movimento).
     {
         printf("Direita\n"); // Imprime a direção do movimento
     }
@@ -22,7 +21,7 @@ int main()
 
     printf("\nMovimento do Bispo:\n");
 
-    while (bispo < 5) // Determina quantas casas andar(repetição do movimento).
+    while (bispo <= 5) // Determina quantas casas andar(repetição do movimento).
     {
         printf("Cima, Direita\n");
         bispo++;
@@ -36,7 +35,7 @@ int main()
     {
         printf("Esquerda\n");
         rainha++;
-    } while (rainha < 8); // Determina quantas casas andar(repetição do movimento).
+    } while (rainha <= 8); // Determina quantas casas andar(repetição do movimento).
 
     return 0;
 }
